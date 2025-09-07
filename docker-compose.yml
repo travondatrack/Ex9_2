@@ -1,0 +1,11 @@
+version: "3"
+services:
+  webapp:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./target/Chap9-1.0-SNAPSHOT.war:/usr/local/tomcat/webapps/ROOT.war
+    restart: always

@@ -1,0 +1,12 @@
+services:
+  # A Docker web service
+  - type: web
+    name: chap9-cd-store
+    env: docker
+    repo: https://github.com/yourusername/chap9-cd-store # Replace with your actual repository URL
+    region: singapore # Change to your preferred region
+    plan: free # or change to a paid plan if needed
+    branch: main # or your preferred branch
+    dockerfilePath: ./Dockerfile
+    numInstances: 1
+    healthCheckPath: /loadProducts
