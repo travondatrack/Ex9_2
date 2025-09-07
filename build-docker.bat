@@ -1,8 +1,5 @@
 @echo off
-echo Building the application...
-call mvn clean package
-
-echo Building Docker image...
+echo Building Docker image (will build the application inside the container)...
 docker build -t chap9-cd-store:latest .
 
 echo Done! 

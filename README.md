@@ -24,6 +24,8 @@ A simple CD store web application built with Java Servlets and JSP.
    docker-compose up --build
    ```
 
+3. Access the application at: http://localhost:8080
+
 ## Deploying to Render
 
 1. Push your code to a GitHub repository.
@@ -55,4 +57,3 @@ You can customize the deployment configuration in `render.yaml` file.
 - Tomcat 9
 - Maven
 - Docker
-
